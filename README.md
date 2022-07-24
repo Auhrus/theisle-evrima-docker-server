@@ -6,7 +6,6 @@ This image provides a TheIsle beta Evrima server. After the first start it downl
 * [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-docker-server#deployment)
 * [Environment Variables🔢](https://github.com/Auhrus/theisle-evrima-docker-server#environment-variables)
 * [Update⏫](https://github.com/Auhrus/theisle-evrima-docker-server#update)
-* [Official Documentation📖](https://github.com/Auhrus/theisle-evrima-docker-server#original-documentation)
 * [Support❤️](https://github.com/Auhrus/theisle-evrima-docker-server#support)
 
 ## Deployment👩‍💻
