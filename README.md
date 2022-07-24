@@ -3,11 +3,11 @@
 This image provides a TheIsle beta Evrima server. After the first start it downloads the necessary files from the Steam servers. If there is an update to the server files, simply recreate the container without having to re-download the image. It will download everything again (just in new) and you can continue.
 ## Content🧾
 
-* [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-server-docker#deployment)
-* [Environment Variables🔢](https://github.com/Auhrus/theisle-evrima-server-docker#environment-variables)
-* [Update⏫](https://github.com/Auhrus/theisle-evrima-server-docker#update)
-* [Official Documentation📖](https://github.com/Auhrus/theisle-evrima-server-docker#original-documentation)
-* [Support❤️](https://github.com/Auhrus/theisle-evrima-server-docker#support)
+* [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-docker-server#deployment)
+* [Environment Variables🔢](https://github.com/Auhrus/theisle-evrima-docker-server#environment-variables)
+* [Update⏫](https://github.com/Auhrus/theisle-evrima-docker-server#update)
+* [Official Documentation📖](https://github.com/Auhrus/theisle-evrima-docker-server#original-documentation)
+* [Support❤️](https://github.com/Auhrus/theisle-evrima-docker-server#support)
 
 ## Deployment👩‍💻
 
@@ -54,9 +54,9 @@ How do i update my TheIsle Server to a newer Version?
 ```bash
 docker stop CONAINER_NAME && docker rm CONAINER_NAME
 ```
-2. Then create him again like in the [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-server-docker#deployment) with the same Volumes.
+2. Then create him again like in the [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-docker-server#deployment) with the same Volumes.
 
 ## Support❤️
 
 If you find any bugs have improvements for this Documentation or have any other suggestions/improvements, please post a bug report or feature suggestion in the 
-[Issues Tab](https://github.com/Auhrus/theisle-evrima-server-docker/issues).
+[Issues Tab](https://github.com/Auhrus/theisle-evrima-docker-server/issues).
