@@ -6,6 +6,6 @@ if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
         touch /home/steam/steamcmd/$CONTAINER_ALREADY_STARTED
 else
     echo "Starting The Isle Server"
-    /home/steam/theisle-dedicated/TheIsleServer.sh MultiHome=$ip?Port=$port?QueryPort=$queryport -log
+    /home/steam/theisle-dedicated/TheIsleServer.sh $additionalcommands -log
 fi
 exit
