@@ -16,7 +16,7 @@ How to install this Docker Container
 1. Install Docker on your Server. Here you can find a guide [[here]](https://duckduckgo.com/?t=ffab&q=How+to+install+Docker+on+Ubuntu)
 2. Run that command
 ```bash
-docker run --name CONAINER_NAME -p 7777-7778:7777-7778/tcp -p 8888:8888/tcp -p 10000:10000/tcp -p 7777-7778:7777-7778/udp -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/Config/LinuxServer -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/PlayerData ghcr.io/auhrus/theisle-evrima-docker-server:latest
+docker run --name CONAINER_NAME -p 7777-7778:7777-7778/tcp -p 8888:8888/tcp -p 10000:10000/tcp -p 7777-7778:7777-7778/udp -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/Config/LinuxServer -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/PlayerData ghcr.io/auhrus/theisleevrima:latest
 ```
 Please replace all things written in CAPS.
 
