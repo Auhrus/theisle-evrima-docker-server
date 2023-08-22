@@ -1,6 +1,6 @@
 # TheIsle Evrima Docker Server 🦖
 
-This image provides a TheIsle beta Evrima server. After the first start it downloads the necessary files from the Steam servers. If there is an update to the server files, simply recreate the container without having to re-download the image. It will download everything again (just in new) and you can continue.
+This image provides a TheIsle beta Evrima server. After the first start it downloads the necessary files from the Alderon Games servers. If there is an update to the server files, simply recreate the container without having to re-download the image. It will download everything again (just in new) and you can continue.
 ## Content🧾
 
 * [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-docker-server#deployment)
