@@ -3,11 +3,11 @@
 This image provides a TheIsle beta Evrima server. After the first start it downloads the necessary files from the Steam servers. If there is an update to the server files, simply recreate the container without having to re-download the image. It will download everything again (just in new) and you can continue.
 ## Content🧾
 
-* [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-docker-server#deployment)
-* [IMPORTANT‼️](https://github.com/Auhrus/theisle-evrima-docker-server#important%EF%B8%8F)
-* [Environment Variables🔢](https://github.com/Auhrus/theisle-evrima-docker-server#environment-variables)
-* [Update⏫](https://github.com/Auhrus/theisle-evrima-docker-server#update)
-* [Support❤️](https://github.com/Auhrus/theisle-evrima-docker-server#support)
+* [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-docker-server?tab=readme-ov-file#deployment)
+* [IMPORTANT‼️](https://github.com/Auhrus/theisle-evrima-docker-server?tab=readme-ov-file#important%EF%B8%8F)
+* [Environment Variables🔢](https://github.com/Auhrus/theisle-evrima-docker-server?tab=readme-ov-file#environment-variables)
+* [Update⏫](https://github.com/Auhrus/theisle-evrima-docker-server?tab=readme-ov-file#update)
+* [Support❤️](https://github.com/Auhrus/theisle-evrima-docker-server?tab=readme-ov-file#support%EF%B8%8F)
 
 ## Deployment👩‍💻
 
