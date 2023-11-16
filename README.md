@@ -16,13 +16,13 @@ How to install this Docker Container
 1. Install Docker on your Server. Here you can find a guide [[here]](https://duckduckgo.com/?t=ffab&q=How+to+install+Docker+on+Ubuntu)
 2. Run that command
 ```bash
-docker run --name CONAINER_NAME -p 7777-7778:7777-7778/tcp -p 8888:8888/tcp -p 10000:10000/tcp -p 7777-7778:7777-7778/udp -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/Config/LinuxServer -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/PlayerData ghcr.io/auhrus/theisleevrima:latest
+docker run --name CONTAINER_NAME -p 7777-7778:7777-7778/tcp -p 8888:8888/tcp -p 10000:10000/tcp -p 7777-7778:7777-7778/udp -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/Config/LinuxServer -v VOLUME_NAME:/home/steam/theisle-dedicated/TheIsle/Saved/PlayerData ghcr.io/auhrus/theisleevrima:latest
 ```
 Please replace all things written in CAPS.
 
 3. After all data has been downloaded, restart the container.
 ```bash
-docker restart CONAINER_NAME
+docker restart CONTAINER_NAME
 ```
 4. After that the TheIsle server starts again it generates the save files, etc.
 
@@ -53,7 +53,7 @@ How do i update my TheIsle Server to a newer Version?
 
 1. First stop and remove the existing Container.
 ```bash
-docker stop CONAINER_NAME && docker rm CONAINER_NAME
+docker stop CONTAINER_NAME && docker rm CONTAINER_NAME
 ```
 2. Then create him again like in the [Deployment👩‍💻](https://github.com/Auhrus/theisle-evrima-docker-server#deployment) with the same Volumes.
 
