@@ -16,7 +16,7 @@ How to install this Docker Container
 1. Install Docker on your Server. Here you can find a guide [[here]](https://duckduckgo.com/?t=ffab&q=How+to+install+Docker+on+Ubuntu)
 2. Run that command
 ```bash
-docker run --name CONTAINER_NAME -p 8888:8888/tcp -p 10000:10000/tcp -p 7777:7777/udp -p 27015:27015/udp -v VOLUME_NAME:"/home/steam/Steam/steamapps/common/The Isle Dedicated Server" ghcr.io/auhrus/theisleevrima:latest
+docker run --name CONTAINER_NAME -p 7777:7777/udp -p 7778:7778/tcp -v VOLUME_NAME:"/home/steam/Steam/steamapps/common/The Isle Dedicated Server" ghcr.io/auhrus/theisleevrima:latest
 ```
 Please replace all things written in CAPS.
 
