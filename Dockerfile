@@ -1,7 +1,5 @@
 FROM cm2network/steamcmd:root
 
-MAINTAINER "https://github.com/Auhrus"
-
 LABEL org.opencontainers.image.source https://github.com/Auhrus/theisle-evrima-docker-server
 LABEL maintainer https://github.com/Auhrus
 
@@ -12,7 +10,7 @@ ENV additionalcommands=""
 ENV updateonstart="false"
 ENV steambranch="evrima"
 
-RUN apt update && apt install procps -y
+RUN apt update && apt install procps -y && apt clean
 
 RUN mkdir -p "/home/steam/Steam/steamapps/common/The Isle Dedicated Server/" \
 	&& chown 1000:1000 -R /home/steam/Steam/steamapps/
