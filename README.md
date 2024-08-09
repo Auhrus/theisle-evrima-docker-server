@@ -16,7 +16,7 @@ How to install this Docker Container
 1. Install Docker on your Server. Here you can find a guide [[here]](https://duckduckgo.com/?t=ffab&q=How+to+install+Docker+on+Ubuntu)
 2. Run that command
 ```bash
-docker run --name CONTAINER_NAME -p 7777:7777/udp -p 7778:7778/tcp -v VOLUME_NAME:"/home/steam/Steam/steamapps/common/The Isle Dedicated Server" ghcr.io/auhrus/theisleevrima:latest
+docker run --name CONTAINER_NAME -p 7777:7777/tcp -p 7777:7777/udp -v VOLUME_NAME:"/home/steam/Steam/steamapps/common/The Isle Dedicated Server" ghcr.io/auhrus/theisleevrima:latest
 ```
 Please replace all things written in CAPS.
 
@@ -27,11 +27,13 @@ Please replace all things written in CAPS.
 
 
 ## IMPORTANT‼️
--Make sure that the folder of the volumes have the owner and group 1000:1000.
+- Make sure that the folder of the volumes have the owner and group 1000:1000.
 
--The server does not create the .ini files itself, they must be created manually on the volume. The "[basic-configs](https://github.com/Auhrus/theisle-evrima-docker-server/tree/main/basic-configs)" folder contains the minimum configuration requirements for starting the server.
+- The server does not create the .ini files itself, they must be created manually on the volume. The "[basic-configs](https://github.com/Auhrus/theisle-evrima-docker-server/tree/main/basic-configs)" folder contains the minimum configuration requirements for starting the server.
 
--There are several beta branches since November 16, 2023. The map Isla Sprio is only in branch "spiro0.11.59.04" the map Gateway is in branch "evrima". If the Isla Sprio map is supposed to be loaded, "MapName=Gateway" must be removed from the Game.ini or a `#` must be added to the front.
+- There are several beta branches since November 16, 2023. The map Isla Sprio is only in branch "spiro0.11.59.04" the map Gateway is in branch "evrima". If the Isla Sprio map is supposed to be loaded, "MapName=Gateway" must be removed from the Game.ini or a `#` must be added to the front.
+
+- If you get the error "DATA ACQUISITION FAILED" when joining your server. Check if you have the setting in the Game.ini "bQueueEnabled" set to true. If it is set to true, you must also open port 1000 (TCP only).
 
 ## Environment Variables🔢
 
