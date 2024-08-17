@@ -13,8 +13,10 @@ echo "***Starting The Isle Server"
 term_handler(){
 	echo "***Stopping"
 	pkill --signal 2 --echo TheIsle
-	wait
-exit $?
+	while pgrep TheIsle; do
+		sleep 2
+	done
+	exit 0
 }
 trap 'term_handler' SIGTERM
 	while true
