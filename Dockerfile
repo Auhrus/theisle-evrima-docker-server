@@ -5,6 +5,7 @@ LABEL maintainer="https://github.com/Auhrus"
 
 EXPOSE 7777/tcp
 EXPOSE 7777/udp
+EXPOSE 10000/tcp
 
 ENV additionalcommands=""
 ENV updateonstart="false"

@@ -16,7 +16,7 @@ How to install this Docker Container
 1. Install Docker on your Server. Here you can find a guide [[here]](https://duckduckgo.com/?t=ffab&q=How+to+install+Docker+on+Ubuntu)
 2. Run that command
 ```bash
-docker run --name CONTAINER_NAME -p 7777:7777/tcp -p 7777:7777/udp -v VOLUME_NAME:"/home/steam/Steam/steamapps/common/The Isle Dedicated Server" ghcr.io/auhrus/theisleevrima:latest
+docker run --name CONTAINER_NAME -p 7777:7777/tcp -p 7777:7777/udp -p 10000:10000/tcp -v VOLUME_NAME:"/home/steam/Steam/steamapps/common/The Isle Dedicated Server" ghcr.io/auhrus/theisleevrima:latest
 ```
 Please replace all things written in CAPS.
 
@@ -33,7 +33,7 @@ Please replace all things written in CAPS.
 
 - There are several beta branches since November 16, 2023. The map Isla Sprio is only in branch "spiro0.11.59.04" the map Gateway is in branch "evrima". If the Isla Sprio map is supposed to be loaded, "MapName=Gateway" must be removed from the Game.ini or a `#` must be added to the front.
 
-- If you get the error "DATA ACQUISITION FAILED" when joining your server. Check if you have the setting in the Game.ini "bQueueEnabled" set to true. If it is set to true, you must also open port 1000 (TCP only).
+- If you get the error "DATA ACQUISITION FAILED" when joining your server. Check if you have the setting in the Game.ini "bQueueEnabled" set to true. If it is set to true, you must also open port 10000 (TCP only).
 
 ## Environment Variables🔢
 
