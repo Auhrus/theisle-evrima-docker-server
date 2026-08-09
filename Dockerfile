@@ -11,7 +11,7 @@ ENV additionalcommands=""
 ENV updateonstart="false"
 ENV steambranch="evrima"
 
-RUN apt update && apt install procps xdg-user-dirs -y && apt-get clean
+RUN apt update && apt install procps xdg-user-dirs tzdata -y && apt-get clean
 
 RUN mkdir -p "/home/steam/Steam/steamapps/common/The Isle Dedicated Server/" \
 	&& chown 1000:1000 -R /home/steam/Steam/steamapps/
