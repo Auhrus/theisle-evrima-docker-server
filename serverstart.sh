@@ -8,7 +8,7 @@ if [ ! -e "/home/steam/CONTAINER_ALREADY_STARTED_PLACEHOLDER" ]; then
 fi
 
 echo "***Starting The Isle Server"
-"/home/steam/Steam/steamapps/common/The Isle Dedicated Server/TheIsleServer.sh" $additionalcommands -log &
+"/home/steam/Steam/steamapps/common/The Isle Dedicated Server/TheIsleServer.sh" $additionalcommands -log -LOCALLOGTIMES -ini:Engine:[EpicOnlineServices]:DedicatedServerClientId=xyza7891gk5PRo3J7G9puCJGFJjmEguW -ini:Engine:[EpicOnlineServices]:DedicatedServerClientSecret=pKWl6t5i9NJK8gTpVlAxzENZ65P8hYzodV8Dqe5Rlc8 &
 
 term_handler(){
 	echo "***Stopping"
