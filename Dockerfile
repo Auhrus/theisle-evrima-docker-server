@@ -9,6 +9,7 @@ EXPOSE 10000/tcp
 
 ENV additionalcommands=""
 ENV updateonstart="false"
+ENV TZ="UTC"
 ENV steambranch="evrima"
 
 RUN apt update && apt install procps xdg-user-dirs tzdata -y && apt-get clean
