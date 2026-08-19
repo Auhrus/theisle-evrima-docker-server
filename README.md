@@ -44,7 +44,7 @@ To run this project, you will need to set the following environment variables.
 | `steambranch`       |Defines which branch should be downloaded from Steam. If you want to play the Isla Sprio Map you have to enter "spiro0.11.59.04". For the latest version with the Map Gateway you have to enter "evrima"|evrima|
 | `additionalcommands`       |Here you can add (if needed) additional commands to start the server.|--|
 | `updateonstart`       |Defines whether the server should check for updates every time it is started.|false|
-|       `TZ` | This can be used to set the time zone within the container. Enter a [TZ identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) for this. When unset its UTC time. | \--
+|       `TZ` | This can be used to set the time zone within the container. Enter a [TZ identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) for this. When unset its UTC time.|UTC|
 
 The server start command:
 
